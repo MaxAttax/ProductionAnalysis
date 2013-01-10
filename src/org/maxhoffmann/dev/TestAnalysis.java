@@ -1,7 +1,9 @@
-package org.maxhoffmann.dev;
+/* package org.maxhoffmann.dev;
 
 import java.util.*;
-import org.hi
+import org.hibernate.*;
+import org.hibernate.cfg.Configuration;
+
 
 public class TestAnalysis {
 	
@@ -19,3 +21,4 @@ public class TestAnalysis {
 	}
 
 }
+*/
