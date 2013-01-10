@@ -22,8 +22,8 @@ public class MainFile
 	}
 	
 	public static void main( String[] args ) {
-		MainFile DieIds = new MainFile();
-		DieIds.getTheIds();
+		MainFile InitializeHibernate = new MainFile();
+		InitializeHibernate.getTheIds();
 	};
 	
 	private void getTheIds() {
