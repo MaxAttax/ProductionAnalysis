@@ -33,10 +33,11 @@ public class MainFile
 			sess = sessionFactory.openSession();
 			trx = sess.beginTransaction();
 			System.out.println("Kunden:\n");
-			List<?> Resources = sess.createQuery( "from resource" ).list();
+			List Resources = sess.createQuery( "from Resource" ).list();
 			for ( int i=0; i<Resources.size(); i++) {
 				Resource resource = (Resource)Resources.get(i);
-				System.out.println("Die Id ist: " + resource.getId());
+				System.out.println("Die Id ist:  " + resource.getRESOURCEID());
+				System.out.println("WorkplaceNo: " + resource.getWORKPLACENO()+ "\n");
 			}
 			trx.commit();
 			} catch( HibernateException ex ) {

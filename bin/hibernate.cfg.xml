@@ -8,7 +8,7 @@
       com.mysql.jdbc.Driver
     </property>
     <property name="hibernate.connection.url">
-      jdbc:mysql://localhost:3306/test_fp_max
+      jdbc:mysql://vpiserver-dev:3306/test_fp_max
     </property>
     <property name="hibernate.connection.username">dataintegrator</property>
     <property name="hibernate.connection.password">@imazlw/xcpb1</property>
