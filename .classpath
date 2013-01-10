@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="C:/Users/mh762698.MOBILE-97/Documents/work/07_Development/workspace/ProductionAnalysis/lib/hsqldb.jar"/>
 	<classpathentry kind="lib" path="C:/Users/mh762698.MOBILE-97/Documents/work/07_Development/workspace/ProductionAnalysis/lib/jta.jar"/>
 	<classpathentry kind="lib" path="C:/Users/mh762698.MOBILE-97/Documents/work/07_Development/workspace/ProductionAnalysis/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mh762698.MOBILE-97/Documents/work/07_Development/workspace/ProductionAnalysis/lib/mysql-connector-java-5.1.21-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

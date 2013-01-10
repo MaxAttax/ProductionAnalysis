@@ -3,7 +3,7 @@
   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="org.maxhoffmann.dev.Resurce" table="resource">
+  <class name="org.maxhoffmann.dev.Resource" table="resource">
     <id name="id" column="ID" type="integer">
       <generator class="native"/>
     </id>

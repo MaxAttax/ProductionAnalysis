@@ -1,8 +1,38 @@
-<target name="clean">
-    <delete dir="build"/>
-</target>
+<project name="ProductionAnalysis" default="run">
+  <property name="myAppClass" value="org.maxhoffmann.dev.MainFile" />
+  <property name="mySrcDir"   value="${basedir}/src" />
+  <property name="myDestDir"  value="${basedir}/bin" />
+  <property name="myLibDir"   value="${basedir}/lib" />
 
-<target name="compile">
-    <mkdir dir="src/classes" />
-    
-</target>
+  <target name="compile">
+    <javac includeantruntime="false" srcdir="${mySrcDir}" destdir="${myDestDir}" debug="on">
+      <classpath>
+        <fileset dir="${myLibDir}">
+          <include name="*.jar" />
+        </fileset>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="copy-resources">
+    <copy todir="${myDestDir}">
+      <fileset dir="${mySrcDir}">
+        <exclude name="**/*.java" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="run" depends="compile,copy-resources">
+    <sleep seconds="1" />
+    <java fork="true" classname="${myAppClass}">
+      <classpath>
+        <fileset dir="${myLibDir}">
+          <include name="*.jar" />
+        </fileset>
+        <pathelement path="${myDestDir}" />
+      </classpath>
+      <arg line="${args}" />
+    </java>
+  </target>
+
+</project>
