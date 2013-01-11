@@ -1,5 +1,5 @@
 <project name="ProductionAnalysis" default="run">
-  <property name="myAppClass" value="org.maxhoffmann.dev.MainFile" />
+  <property name="myAppClass" value="org.maxhoffmann.dev.ProductionAnalysis.MainFile" />
   <property name="mySrcDir"   value="${basedir}/src" />
   <property name="myDestDir"  value="${basedir}/bin" />
   <property name="myLibDir"   value="${basedir}/lib" />
