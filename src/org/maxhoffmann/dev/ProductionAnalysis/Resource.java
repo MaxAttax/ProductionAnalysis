@@ -1,4 +1,4 @@
-package org.maxhoffmann.dev;
+package org.maxhoffmann.dev.ProductionAnalysis;
 
 public class Resource
 {
