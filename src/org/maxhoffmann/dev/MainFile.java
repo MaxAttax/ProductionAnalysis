@@ -32,10 +32,11 @@ public class MainFile
 		try {
 			sess = sessionFactory.openSession();
 			trx = sess.beginTransaction();
-			System.out.println("Kunden:\n");
-			List Resources = sess.createQuery( "from Resource" ).list();
-			for ( int i=0; i<Resources.size(); i++) {
-				Resource resource = (Resource)Resources.get(i);
+			System.out.println("Ressourcen:\n");
+			@SuppressWarnings("unchecked")
+			List<Resource> resources = sess.createQuery( "from Resource" ).list();
+			for ( int i=0; i<resources.size(); i++) {
+				Resource resource = resources.get(i);
 				System.out.println("Die Id ist:  " + resource.getRESOURCEID());
 				System.out.println("WorkplaceNo: " + resource.getWORKPLACENO()+ "\n");
 			}
